@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Assignment 6">
+
+  <title>Local Storage</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<!--
+  ** Create a Web app like the one for the Object List assignment with a table for the items and a form for creating and editing them. The only difference is that instead of just keeping the database in an array in your app's memory, you will also use localStorage to store the data, reading from it at start-up and saving to it whenever data changes. 
+  ** You will need just one property in localStorage for your entire database, a JSON version of your array of objects. 
+-->
+<body>
+  <h1>Object List</h1>
+  <br/>
+  <br/>
+  <input type="button" value="Add New Item" id="addNewItemButton">
+  <br/>
+  <br/>
+  <section id="listSection">
+    <table id='objectListTable'>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id='tbodyStart'>
+      </tbody>
+    </table>
+  </section>
+  <br/>
+  <br/>
+  <section id="inputSection" class="hideIt">
+    <h3>Input object:</h3>
+    <br/>
+    <form id="inputForm">
+      Name: <br/><br/>
+      <input type="text" id="nameInput">
+      <br/><br/>
+      Age: <br/><br/>
+      <input type="number" id="rangeInput" min="0" max="115">
+      <br/><br/>
+      <input type="submit" id="submitButton" value="Submit">
+      <input type="reset" id="cancelButton" value="Cancel">
+    </form>
+  </section>
+  <!-- JavaScript -->
+  <!-- jQuery at http://code.jquery.com/ -->
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+    crossorigin="anonymous">
+  </script>
+
+  <script type="text/javascript" src="js/main.js">
+  </script>
+  
+</body>
+</html>
